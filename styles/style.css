@@ -9,13 +9,19 @@
 
 .header {
     display: grid;
-    grid-template-columns: 188px 2fr 240px;
+    grid-template-columns: 388px 1fr 240px;
     align-items: center;
     margin: 92px 48px;
 }
 
 .menu {
   align-self: center;
+}
+
+.logo {
+    width: 148px;
+    height: 105px;
+    margin: auto;
 }
 
 .contacts {
