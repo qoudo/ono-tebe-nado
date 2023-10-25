@@ -1,1 +1,38 @@
 /* место для вашего кода */
+.menu,
+.contacts {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-underline-offset: 6px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 188px 2fr 240px;
+    align-items: center;
+    margin: 92px 48px;
+}
+
+.menu {
+  align-self: center;
+}
+
+.contacts {
+    line-height: 135%;
+}
+
+.menu-list {
+    display: flex;
+    column-gap: 24px;
+    white-space: nowrap;
+    list-style: circle;
+    text-transform: lowercase;
+    & .menu-item:first-child {
+        list-style: none;
+    }
+}
+
+.not-decoration {
+    text-decoration: none;
+}
