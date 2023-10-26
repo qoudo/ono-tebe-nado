@@ -9,7 +9,7 @@
 
 .header {
     display: grid;
-    grid-template-columns: 388px 1fr 240px;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     margin: 92px 48px;
 }
@@ -21,11 +21,13 @@
 .logo {
     width: 148px;
     height: 105px;
-    margin: auto;
+    justify-self: center;
 }
 
 .contacts {
     line-height: 135%;
+    max-width: 240px;
+    justify-self: end;
 }
 
 .menu-list {
