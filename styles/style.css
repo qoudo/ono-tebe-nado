@@ -1,10 +1,9 @@
-/* место для вашего кода */
+/* Шапка */
 .menu,
 .contacts {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    text-underline-offset: 6px;
 }
 
 .header {
@@ -42,9 +41,12 @@
     list-style: none;
 }
 
+/*Блок cover*/
+
 .cover {
     background: url(../images/cover.jpg), lightgray no-repeat;
     background-size: cover;
+    margin-bottom: 180px;
 }
 
 .overlay {
@@ -67,7 +69,7 @@
    font-style: normal;
 }
 
-.title {
+.cover-title {
     font-size: 100px;
     font-weight: 700;
     margin-bottom:135px;
@@ -93,13 +95,13 @@
     text-align: end;
 }
 
-.description {
+.cover-description {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.subtitle {
+.cover-subtitle {
     text-align: center;
     line-height: 28px;
     word-spacing: 16px;
@@ -112,6 +114,91 @@
     color: white;
     border: 1px solid white;
 }
+
+ /*Раздел lots*/
+
+.lots {
+    margin: 0 50px 180px;
+}
+
+.lots-title {
+    margin: 0 auto 27px 50px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.lots-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    min-height: 100%;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.lots-list-item {
+    flex-grow: 1;
+    min-height: 100%;
+    flex-basis: 430px;
+}
+
+
+.lots-list-item:nth-child(1) {
+    background: url(../images/card-lot-01.jpg), lightgray no-repeat;
+    background-size: cover;
+}
+
+.lots-list-item:nth-child(2) {
+    background: url(../images/card-lot-02.jpg), lightgray no-repeat;
+    background-size: cover;
+}
+
+.lots-list-item:nth-child(3) {
+    background: url(../images/card-lot-03.jpg), lightgray no-repeat;
+    background-size: cover;
+}
+
+.lot-link {
+    display: block;
+    height: inherit;
+}
+
+.lot {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    padding: 50px 40px;
+    color: white;
+}
+
+.lot-subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration:  underline;
+}
+
+.lot-description {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.lot-subtitle,
+.lot-description {
+    line-height: 120%;
+}
+
+.show-all {
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+ /*Вспомогательные стили*/
 
 .desc-text {
     font-size: 22px;
@@ -129,4 +216,12 @@
 
 .not-decoration {
     text-decoration: none;
+}
+
+.text-underline-s {
+    text-underline-offset: 3px;
+}
+
+.text-underline-m {
+    text-underline-offset: 6px;
 }
