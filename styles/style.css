@@ -39,6 +39,81 @@
     }
 }
 
+.cover {
+    background: url(../images/cover.jpg), lightgray 50% / cover no-repeat;
+}
+
+.overlay {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background: black;
+    }
+}
+
+.content {
+   position: relative;
+   padding: 165px 50px 50px;
+   color: white;
+   font-style: normal;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom:135px;
+    letter-spacing: 30px;
+    line-height: 100%;
+    text-transform: uppercase;
+    .title-text {
+        display: block;
+        &:nth-child(1) {
+            line-height: 115%;
+        }
+        &:nth-child(2) {
+            text-align: center;
+            margin: 20px 0;
+        }
+        &:nth-child(3) {
+            text-align: end;
+        }
+    }
+}
+
+.description {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.subtitle {
+    text-align: center;
+    line-height: 28px;
+    word-spacing: 16px;
+}
+
+.bet-button {
+    padding: 12px 32px;
+    margin-left: 78px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.desc-text {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
 .not-decoration {
     text-decoration: none;
 }
