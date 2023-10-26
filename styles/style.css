@@ -24,9 +24,12 @@
 }
 
 .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    white-space: nowrap;
     line-height: 135%;
     max-width: 240px;
-    justify-self: end;
 }
 
 .menu-list {
@@ -49,20 +52,7 @@
     margin-bottom: 180px;
 }
 
-.overlay {
-  position: relative;
-}
-
-.overlay::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    opacity: .6;
-    background: black;
-}
-
-.content {
+.cover-content {
    position: relative;
    padding: 165px 50px 50px;
    color: white;
@@ -224,4 +214,17 @@
 
 .text-underline-m {
     text-underline-offset: 6px;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background: black;
 }
