@@ -121,6 +121,10 @@
     letter-spacing: 60px;
 }
 
+.no-letter-spacing {
+    letter-spacing: normal;
+}
+
 .not-decoration {
     text-decoration: none;
 }
