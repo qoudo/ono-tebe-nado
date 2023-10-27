@@ -1,11 +1,4 @@
 /* Шапка */
-.menu,
-.contacts {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-}
-
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,26 +7,13 @@
     margin: 92px 48px;
 }
 
-.menu {
-  align-self: center;
-}
-
 .header-logo {
     width: 148px;
     height: 105px;
     justify-self: center;
 }
 
-.contacts {
-    display: flex;
-    flex-direction: column;
-    justify-self: end;
-    white-space: nowrap;
-    line-height: 135%;
-    max-width: 240px;
-}
-
-.menu-list {
+.header-menu-list {
     display: flex;
     column-gap: 24px;
     white-space: nowrap;
@@ -41,7 +21,7 @@
     text-transform: lowercase;
 }
 
-.menu-item:first-child {
+.header-menu-item:first-child {
     list-style: none;
 }
 
@@ -104,6 +84,7 @@
     background: transparent;
     color: white;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 .desc-text {
@@ -112,14 +93,14 @@
     text-transform: uppercase;
 }
 
- /*Раздел lots*/
+/*Раздел lots*/
 
 .lots {
     margin: 0 50px 180px;
 }
 
 .lots-title {
-    margin: 0 auto 27px 50px;
+    margin: 0 auto 27px 40px;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -195,11 +176,12 @@
     text-transform: lowercase;
 }
 
- /*Раздел about*/
+/*Раздел about*/
 
 .about {
     display: grid;
     grid-template-columns: 430px 1fr;
+    gap: 25px;
     margin: 0 50px 180px;
 }
 
@@ -233,7 +215,70 @@
     margin-bottom: 25px;
 }
 
- /*Вспомогательные стили*/
+/*Подвал*/
+
+.menu {
+    align-self: center;
+}
+
+.menu,
+.contacts {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 90px;
+}
+
+.social {
+    display: flex;
+    height: 100%;
+    width: 240px;
+    justify-content: space-between;
+}
+
+.footer-menu-list {
+    text-align: center;
+    list-style: none;
+    text-transform: lowercase;
+}
+
+/*Общие стили*/
+
+.overlay {
+    position: relative;
+}
+
+.overlay::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background: black;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.link:active {
+    text-decoration: none;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    white-space: nowrap;
+    line-height: 135%;
+    max-width: 240px;
+}
+
+/*Вспомогательные стили*/
 
 .letter-spacing-extended {
     letter-spacing: 60px;
@@ -253,17 +298,4 @@
 
 .text-underline-m {
     text-underline-offset: 6px;
-}
-
-.overlay {
-    position: relative;
-}
-
-.overlay::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    opacity: .6;
-    background: black;
 }
