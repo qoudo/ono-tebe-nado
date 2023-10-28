@@ -268,7 +268,7 @@
     flex-direction: column;
     justify-self: end;
     line-height: 135%;
-    max-width: 240px;
+    width: 240px;
     font-style: normal;
 }
 
