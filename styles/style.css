@@ -182,7 +182,7 @@
 .about {
     display: grid;
     grid-template-columns: 430px 1fr;
-    gap: 25px;
+    gap: 8px 25px;
     margin: 0 50px 180px;
 }
 
